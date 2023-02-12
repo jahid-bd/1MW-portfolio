@@ -5106,6 +5106,18 @@ video {
   font-weight: 700;
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  .hero-text span {
+    font-size: 16px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text h2 {
+    font-size: 24px;
+  }
+}
+
 .about-bg-video {
   position: absolute;
   top: 0;
@@ -5137,4 +5149,27 @@ video {
   font-size: 28px;
   font-weight: 600;
   line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .about-section-contents .text-continer {
+    width: 100%;
+    padding: 50px;
+  }
+  .about-section-contents .text-continer p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+@media (max-width: 768px) {
+  .about-section-contents .text-continer {
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .about-section-contents .text-continer p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+  }
 }
