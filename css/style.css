@@ -322,9 +322,15 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+/* Fots */
+@font-face {
+  font-family: myHelvetica;
+  src: url('./font/Helvetica.ttf');
+}
+
 /* 3. layout */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -447,13 +453,13 @@ strong {
 #section0,
 #section2,
 #section4 {
-  background: #111;
+  background: #fff;
 }
 
 #section1,
 #section3,
 #section5 {
-  background: #111;
+  background: #fff;
 }
 
 @media only screen and (max-width: 995px) {
@@ -463,12 +469,12 @@ strong {
   #section3,
   #section4,
   #section5 {
-    background: #111;
+    background: #fff;
   }
 }
 
 /* 5. hero */
-.hero-fullscreen {
+.hero-bghero-fullscreen {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1832,7 +1838,7 @@ h3.section-heading.section-heading-dark span:before {
 .works-page-img-carousel-wrapper .works-page-img-carousel-text {
   position: absolute;
   width: 50%;
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
@@ -1975,7 +1981,7 @@ h3.section-heading.section-heading-dark span:before {
 .news-page-img-carousel-wrapper .news-page-img-carousel-text {
   position: absolute;
   width: 50%;
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
@@ -2859,7 +2865,7 @@ form {
   padding: 5px 5px;
   background: none;
   margin: 10px 0 10px 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 13px;
   line-height: 1.5;
   font-style: normal;
@@ -2891,7 +2897,7 @@ textarea {
   padding: 5px 5px;
   background: none;
   margin: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 13px;
   line-height: 1.5;
   font-style: normal;
@@ -2948,7 +2954,7 @@ textarea {
 }
 
 .success {
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -2970,7 +2976,7 @@ textarea {
 
 #form .error {
   position: absolute;
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 9px;
   text-transform: uppercase;
   color: #ff264a;
@@ -3652,7 +3658,7 @@ a:hover.link-effect::after {
 
 .mfp-title,
 .mfp-counter {
-  font-family: 'Raleway', sans-serif;
+  font-family: myHelvetica, sans-serif;
   font-size: 13px;
   line-height: 1.5;
   font-style: normal;
@@ -5095,14 +5101,15 @@ video {
   color: black;
 }
 .hero-text span {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 46px;
   font-weight: bold;
 }
 .hero-text h2 {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
   margin-left: 20px;
 }
@@ -5118,6 +5125,7 @@ video {
   }
 }
 
+/* About sectoin Container */
 .about-bg-video {
   position: absolute;
   top: 0;
@@ -5171,5 +5179,202 @@ video {
     font-size: 18px;
     font-weight: 600;
     line-height: 150%;
+  }
+}
+
+/* Services Section style */
+.services-container .services-text-content {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  z-index: 99;
+  width: 70%;
+}
+.services-container .services-text-content p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+}
+@media (max-width: 1024px) {
+  .services-container .services-text-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container .services-text-content {
+    width: 100%;
+    padding-right: 8%;
+    bottom: 5%;
+  }
+}
+
+/* News Section style */
+.news-container {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  z-index: 99;
+  color: #000;
+  padding: 60px 0;
+}
+.news-container .news-header {
+  width: 50%;
+}
+.news-container .news-header h1 {
+  font-size: 46px;
+  font-weight: bolder;
+  letter-spacing: 150%;
+  line-height: 55px;
+}
+
+.news-container .news-pera {
+  padding-top: 45px;
+  width: 80%;
+}
+.news-container .news-pera p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .news-container {
+    bottom: 5%;
+  }
+  .news-container .news-header {
+    width: 70%;
+  }
+  .news-container .news-header h1 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .news-container .news-pera {
+    width: 90%;
+  }
+  .news-container .news-pera p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .news-container {
+    bottom: 0%;
+  }
+  .news-container .news-header {
+    width: 95%;
+  }
+  .news-container .news-header h1 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+  .news-container .news-pera {
+    width: 100%;
+    padding-right: 5px;
+  }
+  .news-container .news-pera p {
+    font-size: 18px;
+  }
+}
+
+/* Contact Section Style  */
+
+.contact-container .contact-text {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  z-index: 99;
+}
+.contact-container .contact-text p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.5;
+}
+.contact-container .contact-text .contact-btxt {
+  padding-top: 10px;
+}
+
+.contact-container .contact-image {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  text-align: center;
+}
+
+.contact-container .contact-image img {
+  width: 55%;
+  height: 80%;
+  user-select: none;
+}
+
+@media (max-width: 1024px) {
+  .contact-container .contact-text {
+    width: 55%;
+  }
+  .contact-container .contact-text p {
+    font-size: 15px;
+  }
+  .contact-container .contact-image {
+    width: 45%;
+  }
+  .contact-container .contact-image img {
+    width: 70%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contact-container .contact-text {
+    width: 60%;
+  }
+  .contact-container .contact-text p {
+    font-size: 10px;
+  }
+  .contact-container .contact-image {
+    width: 35%;
+  }
+  .contact-container .contact-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Last Section style */
+.last-section-container .last-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.last-section-container .last-section-text {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  z-index: 999;
+  width: 80%;
+  text-align: center;
+}
+.last-section-container .last-section-text p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .last-section-container .last-section-text {
+    width: 95%;
+    left: 5%;
+    bottom: 5%;
+    padding-right: 5px;
+  }
+  .last-section-container .last-section-text p {
+    font-size: 16px;
   }
 }
