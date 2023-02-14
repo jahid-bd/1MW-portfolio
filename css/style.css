@@ -505,17 +505,37 @@ strong {
   height: 100%;
 }
 
+.logo1 {
+  position: fixed;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+  color: #5f5f5f;
+  top: 35px;
+  left: 35px;
+  z-index: 9999;
+}
+.logo1 #about {
+  color: #5f5f5f !important;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 /* 6. logo */
 .logo {
   position: fixed;
-  display: inline-block;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  color: #000;
   top: 35px;
   left: 35px;
   line-height: 0;
-  opacity: 1;
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
-  filter: alpha(opacity=100);
+
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -672,7 +692,7 @@ strong {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #5f5f5f;
 }
 
 #navigation-icon.active .line:nth-child(1) {
@@ -5139,21 +5159,29 @@ video {
 }
 .about-section-contents {
   position: absolute;
-  top: 0;
   bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(73, 98, 210, 0.5);
+  /* background-color: rgba(73, 98, 210, 0.5); */
+  background-image: linear-gradient(
+    358.56deg,
+    #3850a8 3.96%,
+    rgba(56, 81, 167, 0.42) 59.47%,
+    rgba(100, 128, 227, 0) 113.25%
+  );
 }
 .about-section-contents .text-continer {
   width: 70%;
   margin: auto;
   text-align: center;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  bottom: 10%;
+  left: 5%;
 }
 .about-section-contents .text-continer p {
   font-size: 28px;
@@ -5164,7 +5192,8 @@ video {
 @media (max-width: 1024px) {
   .about-section-contents .text-continer {
     width: 100%;
-    padding: 50px;
+    /* padding: 50px; */
+    padding-right: 50px;
   }
   .about-section-contents .text-continer p {
     font-size: 24px;
@@ -5175,7 +5204,8 @@ video {
 @media (max-width: 768px) {
   .about-section-contents .text-continer {
     width: 100%;
-    padding: 40px 30px;
+    /* padding: 40px 30px; */
+    padding-right: 10px;
   }
   .about-section-contents .text-continer p {
     font-size: 18px;
@@ -5464,4 +5494,11 @@ video {
   .footer-container .top-text p {
     font-size: 20px;
   }
+}
+
+.work-section-container .work-section-video {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: auto;
+  overflow: auto;
 }
