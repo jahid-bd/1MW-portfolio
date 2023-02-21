@@ -141,16 +141,28 @@
 
 .services-container .services-text-content {
   position: absolute;
-  bottom: 15%;
-  left: 5%;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 99;
   width: 70%;
 }
-.services-container .services-text-content p {
+.services-container .services-text-content p,
+.services-bottom-text p {
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 150%;
+  text-align: center;
+}
+
+.services-bottom-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 70%;
 }
 
 .services-container .brands-marquee {
@@ -196,17 +208,18 @@
 }
 
 @media (max-width: 1024px) {
-  .services-container .services-text-content p {
+  .services-container .services-text-content p,
+  .services-bottom-text p {
     font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  .services-container .services-text-content {
+  .services-container .services-text-content,
+  .services-bottom-text {
     width: 100%;
-    padding-right: 8%;
-    bottom: 5%;
   }
-  .services-container .services-text-content p {
+  .services-container .services-text-content p,
+  .services-bottom-text p {
     font-size: 16px;
   }
 }
@@ -219,8 +232,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   z-index: 999;
 }
 
@@ -516,13 +530,6 @@
   color: #000;
 }
 
-.work-section-container .work-section-video {
-  width: 100%;
-  height: 100%;
-  scroll-behavior: auto;
-  overflow: auto;
-}
-
 .hero-container {
   position: absolute;
   left: 75px;
@@ -641,3 +648,58 @@
     padding: 10px 25px;
   }
 }
+
+/*=============================================
+=            Work Section styles            =
+=============================================*/
+
+.work-section-container .work-section-video {
+  width: 90%;
+  height: 100%;
+  scroll-behavior: auto;
+  overflow: auto;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.work-section-container .video-thumbnail {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/video-thumb.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.work-section-container .play-btn,
+.work-section-container .pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: block;
+  z-index: 999;
+}
+work-section-container .pause-btn {
+}
+.work-section-container .play-btn svg,
+.work-section-container .pause-btn svg {
+  width: 130px;
+  height: 130px;
+}
+.work-section-container .pause-btn {
+  display: none;
+}
+
+.work-section-container .video-play-btn {
+  display: none;
+}
+
+/*=====  End of Work Section styles  ======*/

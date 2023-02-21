@@ -396,10 +396,3 @@ $('.the-button-details-news').on('click', function () {
     500
   );
 });
-
-$(function () {
-  $('.marquee').marquee({
-    duration: 10000,
-    pauseOnHover: true,
-  });
-});

@@ -22,6 +22,7 @@
       rel="stylesheet"
       type="text/css"
     />
+
     <!-- google fonts end -->
   </head>
   <body>
@@ -318,12 +319,18 @@
               Real Estate today lives online - introduced to consumers at
               multiple touchpoints. NONMLS.com is our single entry no-code
               content hub to discover, personalize and recommend real estate to
-              consumers - across multiple channels. This allows us to uncover
-              and amplify your property's unique value, while modifying
-              misconceptions along the way. We purposefully transcend channels
-              to make work that lands and lasts.
+              consumers – across multiple channels. This allows us to uncover
+              and amplify your property’s unique value, while modifying
+              misconceptions along the way
             </p>
           </div>
+        </div>
+        <div class="services-bottom-text">
+          <p>
+            We purposefully transcend channels to make work that lands and
+            lasts. Our capabilities include orchestrating innovative touchpoints
+            to deliver unrivaled real estate marketing.
+          </p>
         </div>
         <!-- hero bg end -->
 
@@ -339,9 +346,43 @@
       <!-- section works start -->
       <div class="section light-mode" id="section3">
         <div class="work-section-container">
-          <video controls="true" class="work-section-video">
+          <span class="play-btn video-play-btn" id="playBtn">
+            <svg
+              viewBox="0 0 198 198"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M131.657 95.1291L90.543 65.2423C89.0342 64.1485 87.0312 63.9838 85.3774 64.8338C83.7105 65.6771 82.6694 67.3902 82.6694 69.2417V128.995C82.6694 130.867 83.7105 132.573 85.3774 133.417C86.0824 133.772 86.8533 133.95 87.6308 133.95C88.6455 133.95 89.6733 133.627 90.543 132.988L131.657 103.128C132.955 102.173 133.713 100.697 133.713 99.1285C133.719 97.534 132.942 96.0647 131.657 95.1291Z"
+                fill="white"
+              />
+              <path
+                d="M99.0033 0.0131836C44.3163 0.0131836 0 44.3294 0 99.0165C0 153.684 44.3163 197.987 99.0033 197.987C153.677 197.987 198 153.677 198 99.0165C198.007 44.3294 153.677 0.0131836 99.0033 0.0131836ZM99.0033 181.469C53.4615 181.469 16.5379 144.565 16.5379 99.0165C16.5379 53.4879 53.4615 16.5379 99.0033 16.5379C144.538 16.5379 181.456 53.4813 181.456 99.0165C181.462 144.565 144.538 181.469 99.0033 181.469Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          <video class="work-section-video" id="video">
             <source src="./videos/work.mp4" />
           </video>
+          <div class="video-thumbnail" id="videoThumbnail">
+            <span class="play-btn" id="playBtn2">
+              <svg
+                viewBox="0 0 198 198"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M131.657 95.1291L90.543 65.2423C89.0342 64.1485 87.0312 63.9838 85.3774 64.8338C83.7105 65.6771 82.6694 67.3902 82.6694 69.2417V128.995C82.6694 130.867 83.7105 132.573 85.3774 133.417C86.0824 133.772 86.8533 133.95 87.6308 133.95C88.6455 133.95 89.6733 133.627 90.543 132.988L131.657 103.128C132.955 102.173 133.713 100.697 133.713 99.1285C133.719 97.534 132.942 96.0647 131.657 95.1291Z"
+                  fill="white"
+                />
+                <path
+                  d="M99.0033 0.0131836C44.3163 0.0131836 0 44.3294 0 99.0165C0 153.684 44.3163 197.987 99.0033 197.987C153.677 197.987 198 153.677 198 99.0165C198.007 44.3294 153.677 0.0131836 99.0033 0.0131836ZM99.0033 181.469C53.4615 181.469 16.5379 144.565 16.5379 99.0165C16.5379 53.4879 53.4615 16.5379 99.0033 16.5379C144.538 16.5379 181.456 53.4813 181.456 99.0165C181.462 144.565 144.538 181.469 99.0033 181.469Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+          </div>
           <!-- <iframe
             width="100%"
             height="100%"
@@ -471,10 +512,11 @@
     </div>
     <!-- fullPage end -->
     <!-- scripts start -->
+
+    <script src="js/index.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/grandex.js"></script>
-    <script src="js/jquery.marquee.min.js"></script>
-    <script src="js/jquery.marquee.js"></script>
+
     <!-- scripts end -->
   </body>
 </html>
